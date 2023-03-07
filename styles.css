@@ -1,0 +1,334 @@
+/* Polices Personalisées*/
+@font-face {
+  font-family: "BallparkWeiner";
+  src: url("polices_et_images/polices/ballpark.eot");
+  src: url("polices_et_images/polices/ballpark.eot?#iefix")
+      format("embedded-opentype"),
+    url("polices_et_images/polices/ballpark.woff") format("woff"),
+    url("polices_et_images/polices/ballpark.ttf") format("truetype"),
+    url("polices_et_images/polices/ballpark.svg#BallparkWeiner") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dayrom";
+  src: url("polices/dayrom.eot");
+  src: url("polices/dayrom.eot?#iefix") format("embedded-opentype"),
+    url("polices/dayrom.woff") format("woff"),
+    url("polices/dayrom.ttf") format("truetype"),
+    url("polices/dayrom.svg#Dayrom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Dayrom";
+  font-style: normal;
+}
+
+h4 {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
+/* Eléments principaux de la page */
+
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #181818;
+  background-image: url(polices_et_images/images/fond_jaune.jpg);
+}
+
+#bloc_page {
+  width: 900px;
+  margin: auto;
+}
+
+#section h1,
+footer h1,
+nav a,
+h2,
+h3 {
+  font-family: "Dayrom", serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/*Header*/
+header {
+  background: url(polices_et_images/images/separateur.png) repeat-x bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#titre_principal {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-family: "BallparkWeiner", serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  margin: 50px 0px 0px 10px;
+}
+
+header h2 {
+  font-family: "Dayrom", serif;
+  font-size: 1.1em;
+  margin-top: 0px;
+  font-weight: normal;
+}
+
+#logo {
+  display: flex;
+}
+
+#logo img {
+  width: 59px;
+  height: 60px;
+}
+
+/*Navigation*/
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  margin-right: 15px;
+  font-size: x-large;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+/*Bannière*/
+
+#bannière_image {
+  background-image: url("polices_et_images/images/sanfrancisco.jpg");
+  height: 210px;
+  border-radius: 15px;
+  position: relative;
+}
+
+#bannière_description {
+  color: white;
+  background-color: rgba(24, 24, 24, 0.8);
+  border-radius: 15px;
+  height: 40px;
+  position: absolute;
+  bottom: 0px;
+  width: 890px;
+  padding-left: 10px;
+  padding-top: 13px;
+  font-size: 0.8em;
+}
+
+.bouton_rouge {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  height: 16px;
+  background-image: url("polices_et_images/images/fond_degraderouge.png");
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+  border: #760001 2px solid;
+  margin-bottom: 5px;
+}
+
+.bouton_rouge img {
+  border: 0;
+  padding-left: 10px;
+  padding-bottom: 1px;
+}
+
+/*Corps */
+
+/* Travail sur la section en flex box, alignement de article et aside , travail sur la largeur avec width*/
+
+#section {
+  display: flex;
+  background: url(polices_et_images/images/separateur.png) repeat-x bottom;
+}
+
+article {
+  text-align: start;
+  width: 75%;
+}
+
+#article_intro {
+  display: flex;
+  flex-direction: row;
+}
+#titre_article {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#titre_article_epingle {
+  display: flex;
+  margin-top: 20px;
+  width: 10%;
+}
+
+#article_texte {
+  margin-right: 5%;
+}
+
+aside {
+  background-color: rgb(100, 100, 100);
+  height: 50%;
+  border-radius: 15px;
+  width: 30%;
+  text-align: start;
+  color: white;
+  margin-top: 15px;
+}
+
+#fleche_bulle {
+  position: absolute;
+  bottom: 50px;
+  right: 465px;
+}
+h3 {
+  font-size: larger;
+  text-align: center;
+}
+
+#image_zozor {
+  display: flex;
+  justify-content: center;
+}
+
+#texte_aside {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#logos_reseaux_sociaux {
+  display: flex;
+  justify-content: center;
+  padding: 0px 30px 20px 30px;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  background: url(polices_et_images/images/ico_top.png) no-repeat top center;
+}
+
+#tweet {
+  width: 30%;
+  margin-top: 20px;
+}
+
+#photos {
+  width: 40%;
+  margin-top: 20px;
+}
+
+#mes_photos img {
+  border: 1px solid #181818;
+}
+
+#amis {
+  width: 40%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#mes_amis_en_colonne {
+  display: flex;
+  flex-direction: row;
+}
+
+#mes_amis_1 a {
+  width: 50%;
+  text-decoration: none;
+  padding-left: -50px;
+  color: #760001;
+}
+
+#mes_amis_2 a {
+  text-decoration: none;
+  color: #760001;
+  width: 50%;
+}
+
+/*--------------------------------------CV Zozor----------------------------------------------------------------------
+
+/* Police et identité*/
+
+@font-face {
+  font-family: "Action Man";
+  src: url(./police/Action_Man.ttf);
+}
+
+body {
+  font-family: "Action Man";
+}
+
+#zozorPhoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+/* Curriculum Vitae*/
+
+#username {
+  text-align: center;
+  color: rgb(82, 57, 2);
+  font-size: 1.5em;
+}
+#curriculum {
+  position: relative;
+  /* left: 8%;
+  top: 15%;  */
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5em;
+  color: rgb(120, 59, 2);
+  border: rgb(209, 138, 6) 2px solid;
+  border-radius: 15px;
+  box-shadow: 6px 6px 0px rgb(143, 94, 4);
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+}
