@@ -33,7 +33,7 @@ if (isset($_FILES["image"]) && ($_FILES["image"]["error"]) === 0) {
     //array_key_exists — Vérifie si une clé existe dans un tableau
     if (!array_key_exists($extension, $allowed) || !in_array($filetype, $allowed)) {
         // Ici soit l'extension soit le type est incorect 
-        //Explication Anthony : l'extension et le type n'est pas la mâme chose , le type c'est le types réel du ducument , l'extension c'est l'utilisateur qui l'a modifie s'il le veux , par ex en changeant le .txt par .jpg. donc il va falloir emettre une double protaction pour s'assurer que le type et l'extension réelle corresponde , car le type réel peut être un txt. et l'extensiobn annoncé comme jpeg. le fichier est envoyé et cela constitu un virus. Bon ici le code n'eest pas approprié pour , on a simplement fait une première protection
+        //Explication Anthony : l'extension et le type n'est pas la mâme chose , le type c'est le types réel du ducument , l'extension c'est l'utilisateur qui l'a modifie s'il le veux , par ex en changeant le .txt par .jpg. donc il va falloir emettre une double protaction pour s'assurer que le type et l'extension réelle corresponde , car le type réel peut être un txt. et l'extensiobn annoncé comme jpeg. le fichier est envoyé et cela constitu un virus. Bon ici le code n'eest pas approprié pour , on a simplement fait une première protection. c'est le push 3.
         die("Erreur : format de fichier incorrect");
     }
 };
