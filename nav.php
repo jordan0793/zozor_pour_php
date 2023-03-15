@@ -11,6 +11,7 @@
         <?php else : ?>
             <li>Bonjour <?= $_SESSION["user"]["pseudo"] ?>
             </li>
+            <li><a href="upload.php">FICHIER</a></li>
             <li><a href="logout.php">DECONNEXION</a></li>
         <?php endif; ?>
     </ul>
